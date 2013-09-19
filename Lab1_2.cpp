@@ -1,20 +1,50 @@
-#include "StdAfx.h"
+#include<stdio.h>
+#include<iostream>
 #include "Lab1_2.h"
 
-Lab1_2::Lab1_2(void)
-{
-	printf("Constructor has been successfully activated!");
-	printf("Class copy has been created.");
+Bankir::eat(int force, int health) {
+	Vasya::force += 10;
+	Vasya::health += 2;
+	
 }
 
-Lab1_2::~Lab1_2(void)
-{
-	printf("Destructor has been successfully activated!");
-	printf("Class copy has been deleted.")
+Bankir::breath(int health) {
+	Vasya::health += 5;
 }
 
-Simple_printf()
+Bankir::count(int force) {
+	Vasya::force -= 5;
+}
+
+Bankir::say(int intelligence) {
+	Vasya::intelligence += 1;
+
+Bankir::smoke(int health) {
+	Vasya::health -= 20;
+}
+
+int main()
 {
-	SomeField = 55;
-	printf("My money becomes 0. Now it's: %d dollars. :) ", SomeField);
+	Bankir *Vasya = new Bankir();
+	int health = 100;
+	int force = 150;
+	int intelligence 20;
+	printf("Vasya's forces before working day ->>>> health : %d, foece: %d, intelligence %d. \n", health, force, intelligence);
+	Vasya->eat(force, health);
+	Vasya->breath(int health);
+	for (int i = 0; i <=2; i++)
+	{
+	Vasya->smoke(int health);
+	}
+	Vasya->say(int intelligence);
+	for (int i = 0; i <=12; i++)
+	{
+	  Vasya->count(int force);
+	}
+	
+	printf("Vasya's forces after working day ->>>> health : %d, foece: %d, intelligence %d. \n", health, force, intelligence);
+	
+	delete Vasya;
+	_getch();
+return 0;	
 }
