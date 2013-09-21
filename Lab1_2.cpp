@@ -2,24 +2,24 @@
 #include<iostream>
 #include "Lab1_2.h"
 
-Bankir::eat(int force, int health) {
+Bankir::eat() {
 	Vasya::force += 10;
 	Vasya::health += 2;
 	
 }
 
-Bankir::breath(int health) {
+Bankir::breath() {
 	Vasya::health += 5;
 }
 
-Bankir::count(int force) {
+Bankir::count() {
 	Vasya::force -= 5;
 }
 
-Bankir::say(int intelligence) {
+Bankir::say() {
 	Vasya::intelligence += 1;
 
-Bankir::smoke(int health) {
+Bankir::smoke() {
 	Vasya::health -= 20;
 }
 
@@ -33,16 +33,16 @@ int main()
 	Vasya::health = health;
 	Vasya::force = force;
 	Vasya::intelligence = intelligence;
-	Vasya->eat(force, health);
-	Vasya->breath(int health);
+	Vasya->eat();
+	Vasya->breath();
 	for (int i = 0; i <=2; i++)
 	{
-	Vasya->smoke(int health);
+	Vasya->smoke();
 	}
-	Vasya->say(int intelligence);
+	Vasya->say();
 	for (int i = 0; i <=12; i++)
 	{
-	  Vasya->count(int force);
+	  Vasya->count();
 	}
 	intelligence = Vasya::intelligence;
 	force = Vasya::force;
@@ -53,3 +53,4 @@ int main()
 	_getch();
 return 0;	
 }
+
