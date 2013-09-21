@@ -11,11 +11,11 @@ public:
 	}
 	
 	
-	void eat(int force, int health);
-	void breath(int health);
-	void count(int force);
-	void say(int intelligence);
-	void smoke(int health);
+	void eat();
+	void breath();
+	void count();
+	void say();
+	void smoke();
 	
 private:
 	int force;
