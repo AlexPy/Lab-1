@@ -30,6 +30,9 @@ int main()
 	int force = 150;
 	int intelligence 20;
 	printf("Vasya's forces before working day ->>>> health : %d, foece: %d, intelligence %d. \n", health, force, intelligence);
+	Vasya::health = health;
+	Vasya::force = force;
+	Vasya::intelligence = intelligence;
 	Vasya->eat(force, health);
 	Vasya->breath(int health);
 	for (int i = 0; i <=2; i++)
@@ -41,7 +44,9 @@ int main()
 	{
 	  Vasya->count(int force);
 	}
-	
+	intelligence = Vasya::intelligence;
+	force = Vasya::force;
+	health = Vasya::force;
 	printf("Vasya's forces after working day ->>>> health : %d, foece: %d, intelligence %d. \n", health, force, intelligence);
 	
 	delete Vasya;
